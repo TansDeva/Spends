@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class="MainActivityBinding"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Toolbar
+                android:title="@string/app_name"
+                android:background="@color/colorPrimary"
+                android:titleTextColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_bar_height"/>
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tv_user_balance"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/main_balance_text"
+                android:layout_marginRight="@dimen/main_balance_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/srl_transactions"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.RecyclerView
+                    android:clipToPadding="true"
+                    android:id="@+id/rv_transactions"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab_add_spend"
+                android:src="@drawable/ic_launcher"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="@dimen/add_expense_margin"
+                android:layout_marginBottom="@dimen/add_expense_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fabSize="auto"
+                app:maxImageSize="@dimen/add_expense_image"
+                app:backgroundTint="@color/colorPrimary"/>
+        </RelativeLayout>
+    </LinearLayout>
+</layout>

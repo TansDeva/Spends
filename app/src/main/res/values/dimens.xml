@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_bar_height">48dp</dimen>
+
+    <dimen name="splash_icon">128dp</dimen>
+    <dimen name="splash_text_size">18sp</dimen>
+    <dimen name="splash_text_margin">16dp</dimen>
+
+    <dimen name="main_balance_text">16sp</dimen>
+    <dimen name="main_balance_margin">16dp</dimen>
+    <dimen name="add_expense_image">56dp</dimen>
+    <dimen name="add_expense_margin">32dp</dimen>
+
+    <dimen name="add_app_icon">56dp</dimen>
+    <dimen name="add_app_margin">16dp</dimen>
+    <dimen name="add_item_margin">16dp</dimen>
+    <dimen name="add_submit_height">48dp</dimen>
+    <dimen name="add_submit_text">16sp</dimen>
+
+    <dimen name="transaction_margin">4dp</dimen>
+    <dimen name="transaction_padding">8dp</dimen>
+    <dimen name="transaction_detail_text">14sp</dimen>
+    <dimen name="transaction_amount_text">16sp</dimen>
+    <dimen name="transaction_radius">4dp</dimen>
+    <dimen name="transaction_elevation">4dp</dimen>
+</resources>

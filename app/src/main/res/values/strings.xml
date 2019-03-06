@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Spends</string>
+    <string name="add_spend">Add Spend</string>
+    <string name="add_submit">Submit</string>
+</resources>
